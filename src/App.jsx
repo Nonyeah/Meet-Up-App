@@ -423,7 +423,8 @@ export default function Meetup() {
         <ReducerContext.Provider value={dispatch}>
           <div className="eventpage">
             <p>
-              <a href="#"
+              <a
+                href="#"
                 onClick={() =>
                   dispatch({
                     type: group.id,
@@ -432,7 +433,7 @@ export default function Meetup() {
                     events: group.events,
                   })
                 }
-                >
+              >
                 &larr;{" "}
               </a>
             </p>
@@ -441,7 +442,7 @@ export default function Meetup() {
               {group.date} {group.time}
             </p>
             <p>{group.address}</p>
-            
+
             <h3>About</h3>
             <p className="description">{group.description}</p>
           </div>
