@@ -229,7 +229,7 @@ a {
 .topnav li {
   margin: 30px 0;
   width: 25%;
-  padding: 0
+  padding: 0;
 }
 
 .topnav a {
@@ -239,8 +239,7 @@ a {
   text-align: center;
   padding: 10px;
   width: 100%;
-  margin:0;
-
+  margin: 0;
 }
 
 .time {
