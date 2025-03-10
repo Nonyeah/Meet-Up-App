@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1.mainheader {
   text-align: center;
   color: red;
@@ -225,15 +229,19 @@ a {
 .topnav li {
   margin: 30px 0;
   width: 25%;
-  padding: 16px;
+  border: 1px solid red;
+  padding: 0
 }
 
 .topnav a {
   font: 14px verdana;
   text-transform: uppercase;
-  padding: 10px 16px;
-  display: inline-block;
+  display: block;
   text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin:0;
+
 }
 
 .time {
@@ -248,7 +256,7 @@ h4 {
 .going,
 .saved,
 .past {
-  background-color: #f5f5f5;
+  background-color: #7067f0;
 }
 .calendardisplay {
   margin-top: 30px;
