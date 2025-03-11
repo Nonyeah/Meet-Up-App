@@ -180,7 +180,19 @@ a {
 
 .eventpage {
   text-align: center;
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid #dcdcdc;
+  margin: 30px auto;
 }
+
+.grouppages{
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid #dcdcdc;
+  margin: 30px auto;
+}
+
 
 .eventpage a, .grouppages a{
   font-size: 50px;
