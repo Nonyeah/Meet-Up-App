@@ -397,15 +397,14 @@ export default function Meetup() {
         <ReducerContext.Provider value={dispatch}>
           <div className="grouppages">
             <p>
-              <a
+              <a href="#"
                 onClick={() =>
                   dispatch({
                     type: "home",
                   })
-                }
-                href="#"
+                } 
               >
-                &larr;
+                 &larr;{" "} 
               </a>
             </p>
             <div className={`group${group.groupid} page-banner`}>
@@ -428,13 +427,13 @@ export default function Meetup() {
                 onClick={() =>
                   dispatch({
                     type: group.id,
-                    name: group.name,
                     members: group.members,
                     events: group.events,
+                    name: group.groupname,
                   })
                 }
               >
-                &larr;{" "}
+               &larr;{" "} 
               </a>
             </p>
             <h3>{group.name}</h3>
@@ -530,6 +529,7 @@ function groupReducer(group, action) {
         id: action.id,
         members: action.members,
         events: action.events,
+        groupname: action.groupname,
       };
     }
 
@@ -550,6 +550,7 @@ function Events() {
   const groupstate = useContext(GroupsContext);
   const reducerstate = useContext(ReducerContext);
   let id = groupstate.groupid;
+  let groupname = groupstate.groupname;
   const members = groupstate.groupmember;
   const groupEvent = groupstate.groupevent;
   const events = groupstate.groupevent.map((event, i) => (
@@ -565,6 +566,7 @@ function Events() {
           id: id,
           members: members,
           events: groupEvent,
+          groupname: groupname,
         })
       }
       className="events"
