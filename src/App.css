@@ -314,5 +314,6 @@ h4 {
 
   .events div {
     padding: 10px 30px;
+    width:auto;
   }
 }
