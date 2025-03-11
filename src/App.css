@@ -312,7 +312,7 @@ h4 {
   
   }
 
-  .events {
-    padding: 10px 20px;
+  .events div {
+    padding: 10px 30px;
   }
 }
