@@ -296,6 +296,11 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .upcoming-events-category {
+    height: 250px;
+  }
+  
   .topnav h4 {
     font-size: 16px;
   }
