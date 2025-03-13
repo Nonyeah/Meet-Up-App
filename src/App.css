@@ -156,7 +156,6 @@ a {
   font-weight: bold;
 }
 
-
 .event-container {
   display: flex;
   overflow-x: auto;
@@ -186,19 +185,19 @@ a {
   margin: 30px auto;
 }
 
-.grouppages{
+.grouppages {
   width: 90%;
   border-radius: 20px;
   border: 1px solid #dcdcdc;
   margin: 30px auto;
 }
 
-
-.eventpage a, .grouppages a{
+.eventpage a,
+.grouppages a {
   font-size: 50px;
-  font-weight:bold;
+  font-weight: bold;
   text-align: center;
-  color:#000;
+  color: #000;
 }
 
 .eventpage .description {
@@ -271,6 +270,9 @@ h4 {
 }
 .calendardisplay {
   margin-top: 30px;
+  height: 800px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 @media only screen and (min-width: 800px) {
@@ -319,13 +321,12 @@ h4 {
     margin: 0 5px;
   }
 
-  .eventpage a{
+  .eventpage a {
     font-size: 45px;
-  
   }
 
-  div.events  {
+  div.events {
     padding: 10px 30px;
-    width:auto;
+    width: auto;
   }
 }

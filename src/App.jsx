@@ -397,14 +397,15 @@ export default function Meetup() {
         <ReducerContext.Provider value={dispatch}>
           <div className="grouppages">
             <p>
-              <a href="#"
+              <a
+                href="#"
                 onClick={() =>
                   dispatch({
                     type: "home",
                   })
-                } 
+                }
               >
-                 &larr;{" "} 
+                &larr;{" "}
               </a>
             </p>
             <div className={`group${group.groupid} page-banner`}>
@@ -433,7 +434,7 @@ export default function Meetup() {
                   })
                 }
               >
-               &larr;{" "} 
+                &larr;{" "}
               </a>
             </p>
             <h3>{group.name}</h3>
