@@ -50,7 +50,9 @@ h1 {
 }
 
 .upcoming-events-category {
-  height: auto;
+  height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: none;
   border: 1px ridge #ccc2c2;
   box-shadow: 2px 5px #0f0f0f;
   width: 90%;
